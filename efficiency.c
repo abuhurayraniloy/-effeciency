@@ -19,7 +19,7 @@ int main()
     for(i=0;i<5;i++){
         SD1 = SD1 + (sum-player.score[i])*(sum-player.score[i]);
     }
-    SD1 = sqrt(SD1/4);
+    SD1 = sqrt(SD1/5);
     scanf("%s",player2.name);
     sum = 0;
     double SD2=0;
@@ -31,7 +31,7 @@ int main()
     for(i=0;i<5;i++){
         SD2 = SD2 + (sum-player2.score[i])*(sum-player2.score[i]);
     }
-    SD2 = sqrt(SD2/4);
+    SD2 = sqrt(SD2/5);
     if(SD1>SD2){
         printf("The more consistant player is %s",player2.name,SD2,SD1);
     }
